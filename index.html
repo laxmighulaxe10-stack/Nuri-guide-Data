@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuriguide - Meal Recommendation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Nuriguide Diet Recommendation System</h2>
+
+<form action="/predict" method="POST">
+    <label>Age:</label>
+    <input type="number" name="age" required>
+
+    <label>Height (cm):</label>
+    <input type="number" name="height" required>
+
+    <label>Weight (kg):</label>
+    <input type="number" name="weight" required>
+
+    <label>Gender:</label>
+    <select name="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Disease:</label>
+    <select name="disease">
+        <option>None</option>
+        <option>Diabetes</option>
+        <option>Blood Pressure</option>
+        <option>Thyroid</option>
+    </select>
+
+    <button type="submit">Get Meal Recommendation</button>
+</form>
+
+</body>
+</html>
